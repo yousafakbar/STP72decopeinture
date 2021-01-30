@@ -1,0 +1,408 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins";
+}
+
+section
+{
+	position: relative;	
+	width: 100%;
+	height: 70vh;
+	background: url(7.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+section .wave
+{
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(wave.png);
+	opacity: 1;
+	animation: animate 10s linear infinite;
+}
+section .wave:before
+{
+	content: '';
+	width: 100%;
+	height: 143px;
+	background: url(wave.png);	
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .7;
+	animation: animate-reverse 10s linear infinite;
+
+}
+
+
+
+section .wave:after
+{
+	content: '';
+	width: 100%;
+	height: 143px;
+	background: url(wave.png);	
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity:0.3;
+	animation-delay: -5s;
+	animation: animate 20s linear infinite;
+
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0;
+	}
+	100%
+	{
+		background-position: 1360px;
+	}
+}
+
+@keyframes animate-reverse
+{
+	0%
+	{
+		background-position: 1360px;
+	}
+	100%
+	{
+		background-position: 0;
+	}
+}
+section .content
+{
+	position: relative;
+	z-index: 1;
+	margin: auto;
+	max-width: 900px;
+	text-align: center;
+}
+section .content h1
+{
+	margin: 0;
+	padding-top: 5%;
+	color: #fff;
+	font-size: 4em;
+
+}
+section .content p
+{
+
+	color: #fff;
+	font-size: 1.5em;
+	
+}
+/* top number button and email button  */
+a.btn
+{
+	color: white;
+	border-radius: 25px;
+	margin-left: 30px;
+	font-size: 25px;
+}
+.primary
+{
+	background-color: #00bcd4;
+	font-size: 20px;
+}
+
+/* Three Buttons media querries start  */
+
+
+@media(max-width: 650px)
+{
+	.btn-group .button1 h2{
+		font-size: 17px;
+		color: #212121;
+	}
+}
+
+@media(max-width: 650px)
+{
+	.btn-group .button1 .list-text{
+		font-size: 15px;
+	}
+}
+@media(max-width: 650px){
+	.btn-group .button1 {
+
+  		background-color: white; /* white background */
+  		height: 299px;
+	}
+}
+
+@media(max-width: 650px)
+{
+	.btn-group .button2 .list-text{
+		font-size: 15px;
+	}
+}
+@media(max-width: 650px){
+	.btn-group .button2 {
+
+  		background-color: white; /* white background */
+  		height: 299px;
+	}
+}
+
+@media(max-width: 650px)
+{
+	.btn-group .button2 h2{
+		font-size: 17px;
+		color: #212121;
+	}
+}
+
+@media(max-width: 650px)
+{
+	.btn-group .button3 .list-text{
+		font-size: 15px;
+	}
+}
+@media(max-width: 650px){
+	.btn-group .button3 {
+
+  		background-color: white; /* white background */
+  		height: 299px;
+	}
+}
+
+@media(max-width: 650px)
+{
+	.btn-group .button3 h2{
+		font-size: 17px;
+		color: #212121;
+	}
+}
+
+
+/* Three button media querries end */
+
+
+
+
+/* Three button css */
+
+
+.btn-group button {
+
+  background-color: white; /* white background */
+  margin-top: 5px;
+  width:100%;
+  border: 5px solid #8e24aa;
+  border-bottom-style: dashed;
+  border-top-style: dashed;
+  border-radius: 29px;
+  cursor: pointer; /* Pointer/hand icon */
+  margin-left: 24px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.list-text{
+	color: #616161;
+	 font-size: 22px;
+}
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  transform: scale(1.05); 
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+
+.carousel-nav-icon {
+   height: 48px;
+   width: 48px;
+   padding-right: 9px;
+   margin-right: 33px; 
+
+
+}
+
+  .carousel-item  .col, .carousel-item .col-sm, .carousel-item .col-md {
+      margin: 8px;
+      height: 300px;
+      background-size: cover;
+      background-position: center center;
+   }
+
+
+.button
+{
+	color: white;
+	padding: 20px;
+	font-size: 16px;
+ 	margin: 4px 2px;
+ 	text-align: center;
+ 	background-color: white;
+ 	 display: inline-block;
+}
+.button1
+{
+	border-radius: 50%;
+}
+
+
+/* Notre entreprise heading row */
+
+.row2
+{
+	margin-top: 2%;
+	background-color: white;
+}
+h1
+{
+	font-family: 'Montserrat',sans-serif;
+}
+h2
+{
+	font-family: 'Montserrat',sans-serif;
+		
+}
+
+
+
+
+
+
+.backgrond-1
+{
+	margin:0;
+	padding: 0;
+	width: 100% ;
+	height: 450px;
+	background-color: black;
+	position: relative;
+	background: linear-gradient(90deg, #f0027f, #75489f); 
+}
+.backgrond-1:before
+{
+	content: '';
+	position: : absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+}
+.text-sm-center
+{
+	font-size: 25px;
+	margin-left: 25%;
+	margin-right: 25%;
+
+}
+
+
+/* Form css */
+#main1 {
+    padding: 0px 0px;
+    overflow: hidden;
+}
+
+#shade {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(137, 0, 255, 0.25), rgba(255, 0, 118, 0.25));
+    position: relative;
+}
+
+#img {
+    position: absolute;
+}
+
+#main {
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.46);
+}
+
+input {
+    border: 1px solid white;
+}
+
+#input {
+    border-bottom: 1px solid #717171;
+    padding: 4px;
+    padding-top: 0px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+.container {
+    margin-top: 70px;
+
+}
+
+.signupcontainer {
+    margin-top: 70px;
+
+   
+}
+.card
+{
+	border:5px solid #8e24aa;
+	border-radius: 25px;
+	border-bottom-style: dashed;
+	border-top-style: dashed;
+	margin-top: 2%;
+}
+.card:hover 
+{
+  transform: scale(1.1); 
+  border:solid;
+  border-color: #8e24aa;
+  margin: 1%;
+
+}
+
+
+
+
+.footer-line-height{
+    line-height: 40px;
+    font-size: 18px;
+    font-family: cursive;
+    
+    
+    
+}
+
+.footer-text-color{
+    color: #d3d3d3;
+}
+
+.d-block{
+	width: 100%;
+	height: 799px;
+}
+
+
+
+
+
+
+
+
+
+
